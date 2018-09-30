@@ -19,7 +19,7 @@ public class Car extends Vehicle {
     }
 
     public int getPrice() {
-        return 200 + 15 * getPassengerCount();
+        return 100 + 15 * getPassengerCount();
     }
 
     public String getName() {

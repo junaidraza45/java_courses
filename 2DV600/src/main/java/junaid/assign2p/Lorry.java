@@ -17,6 +17,7 @@ public class Lorry extends Vehicle {
         }
 
         public int getSpace() {
+            // one car = 5 bikes and lorry take place of 8 cars so
             return 5 * 8;
         }
 
@@ -25,6 +26,6 @@ public class Lorry extends Vehicle {
         }
 
         public String getName() {
-            return "Car";
+            return "Lorry";
         }
     }

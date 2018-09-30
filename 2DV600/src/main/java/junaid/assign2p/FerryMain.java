@@ -49,6 +49,7 @@ public class FerryMain implements Ferry {
             vehicles.add(v);
             vehiclespace = vehiclespace+v.getSpace();
             passengerCount = passengerCount+v.getPassengerCount();
+
         } else
             throw new RuntimeException("no space");
 
@@ -65,13 +66,18 @@ public class FerryMain implements Ferry {
 
 
     public void disembark(){  //disembark the ferry
+
+
         vehiclespace = 0;
         passengerCount = 0;
+
+
     }
 
     @Override
     public boolean hasSpaceFor(Vehicle v) {
-        if(vehiclespace + v.getSpace() >= maxVehicleSpace  ){
+        if(vehiclespace + v.getSpace() <= maxVehicleSpace  ){
+
             return true;
         } else {
             return false;
@@ -88,6 +94,15 @@ public class FerryMain implements Ferry {
     }
 
     public static void main(String args[]){
+        Passenger bipassenger = new Passenger("Aslam");
+        Bicycle bicycle = new Bicycle(bipassenger);
+
+        System.out.println(bicycle);
+
+
+        //get total price
+
+
 
 
     }

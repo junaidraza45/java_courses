@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public abstract class Vehicle {
+
     private static int nextId = 0;
     protected final int vehicleId;
     private List<Passenger> passengers;
